@@ -1,0 +1,11 @@
+{
+  "name": "fic-xilitla",
+  "private": true,
+  "description": "Sitio del Festival Internacional de Cine de Xilitla",
+  "scripts": {
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
