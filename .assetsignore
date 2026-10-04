@@ -9,5 +9,6 @@ package-lock.json
 wrangler.jsonc
 generate_site.py
 README.md
+reportes
 *.log
 .DS_Store
