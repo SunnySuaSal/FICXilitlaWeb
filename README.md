@@ -13,4 +13,8 @@ Abre http://localhost:3000
 
 ## Publicar
 
-Sube este repositorio a Cloudflare Pages, Netlify o GitHub Pages (carpeta raíz). El archivo `_redirects` conserva las URLs de Squarespace (`/quienes-somos`, `/convocatoria`, etc.).
+Cloudflare (Workers + assets estáticos) lee `wrangler.jsonc`. El archivo `.assetsignore` evita subir `node_modules` (si no, el deploy falla por el binario `workerd`).
+
+Comando de deploy en el panel: `npx wrangler deploy`. No hace falta comando de build.
+
+El archivo `_redirects` conserva las URLs de Squarespace (`/quienes-somos`, `/convocatoria`, etc.).
