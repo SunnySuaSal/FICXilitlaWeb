@@ -83,9 +83,9 @@ pages["index.html"] = page(
       </div>
     </section>
     <section class="video-wrap">
-      <video controls playsinline poster="assets/home/video-poster.jpg">
-        <source src="assets/home/promo.mp4" type="video/mp4">
-      </video>
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/qYeIt9abn_0" title="Video promocional FICXILITLA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     </section>
     <section class="section split">
       <div>
