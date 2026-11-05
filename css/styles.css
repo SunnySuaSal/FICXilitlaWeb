@@ -210,6 +210,18 @@ a:hover {
   object-fit: cover;
 }
 
+.banner-full {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-full img {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
 .video-wrap {
   background: #000;
   padding: 0 24px 48px;

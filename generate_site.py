@@ -87,6 +87,9 @@ pages["index.html"] = page(
         <iframe src="https://www.youtube-nocookie.com/embed/qYeIt9abn_0" title="Video promocional FICXILITLA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </section>
+    <section class="banner-full">
+      <img src="assets/home/pulseraAllAccess.jpg" alt="Acreditación All Access del Festival Internacional de Cine de Xilitla: pulsera con acceso a las experiencias del festival, $350 MXN por persona.">
+    </section>
     <section class="section split">
       <div>
         <h2>Experimenta el cine en la selva</h2>
