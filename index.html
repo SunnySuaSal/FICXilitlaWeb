@@ -31,19 +31,24 @@
     </div>
   </header>
   <main id="contenido">
-    <section class="hero" style="background-image:url('assets/home/hero.jpg')">
+    <section class="hero" data-hero-carousel aria-roledescription="carrusel" aria-label="Imágenes del festival">
+      <div class="hero-slides">
+        <img class="hero-slide is-active" src="assets/home/hero.jpg" alt="" aria-hidden="true">
+        <img class="hero-slide hero-slide--poster" src="assets/home/pulseraAllAccess.jpg" alt="Acreditación All Access del Festival Internacional de Cine de Xilitla: pulsera con acceso a las experiencias del festival, $350 MXN por persona." aria-hidden="true">
+      </div>
       <div class="hero-copy">
         <p>2 al 6 de diciembre</p>
         <h1>FICXILITLA 2026</h1>
+      </div>
+      <div class="hero-dots">
+        <button type="button" aria-label="Foto del festival" aria-selected="true"></button>
+        <button type="button" aria-label="Acreditación All Access" aria-selected="false"></button>
       </div>
     </section>
     <section class="video-wrap">
       <div class="video-frame">
         <iframe src="https://www.youtube-nocookie.com/embed/qYeIt9abn_0" title="Video promocional FICXILITLA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-    </section>
-    <section class="banner-full">
-      <img src="assets/home/pulseraAllAccess.jpg" alt="Acreditación All Access del Festival Internacional de Cine de Xilitla: pulsera con acceso a las experiencias del festival, $350 MXN por persona.">
     </section>
     <section class="section split">
       <div>
@@ -75,6 +80,6 @@
     </div>
     <p class="credit">Desarrollado por Jorge S. Saldaña</p>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
