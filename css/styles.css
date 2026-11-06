@@ -142,16 +142,23 @@ a:hover {
 
 .hero {
   position: relative;
-  min-height: 72vh;
-  display: grid;
-  place-items: end center;
   background: #000;
   overflow: hidden;
 }
 
 .hero-slides {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  width: 100%;
+  min-height: 72vh;
+}
+
+.hero.is-poster {
+  padding-bottom: 40px;
+}
+
+.hero.is-poster .hero-slides {
+  min-height: 0;
+  aspect-ratio: 3360 / 1890;
 }
 
 .hero-slide {
@@ -170,10 +177,7 @@ a:hover {
 }
 
 .hero-slide--poster {
-  object-fit: contain;
-  top: 16px;
-  bottom: auto;
-  height: calc(100% - 58px);
+  object-fit: fill;
 }
 
 .hero::after {
@@ -196,7 +200,10 @@ a:hover {
 }
 
 .hero-copy {
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 2;
   text-align: center;
   padding: 48px 20px 72px;
@@ -211,6 +218,10 @@ a:hover {
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
+}
+
+.hero.is-poster .hero-dots {
+  bottom: 6px;
 }
 
 .hero-dots button {
@@ -286,7 +297,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 40px;
-  align-items: center;
+  align-items: start;
 }
 
 .split img {
@@ -298,6 +309,10 @@ a:hover {
 .video-wrap {
   background: #000;
   padding: 0 24px 48px;
+}
+
+.hero + .section {
+  padding-top: 56px;
 }
 
 .video-frame {
